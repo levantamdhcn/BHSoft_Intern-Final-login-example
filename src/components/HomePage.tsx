@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
 import { useDispatch,useSelector } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { userActions } from '../stores/index'
@@ -15,9 +14,9 @@ function HomePage() {
     return (
         <div>
             <h1>Welcome {userInfoState.email}</h1>
-            <Button onClick={handleLogout}>
+            <button onClick={handleLogout}>
                 Logout
-            </Button>
+            </button>
         </div>
     )
 }
